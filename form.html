@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Розробка сайт - обговорити проект</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="media.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src='main.js'></script>
+</head>
+<body>
+    <main class="main__form-detail">
+        <div class="container__form">
+            <h1>Обговорити проект</h1>
+            <div class="line__google-form">
+                <a>Заповнити  детальну форму можна тут</a>
+                <a href=""><img src="./img/Arrow__form-detail.svg" alt=""></a>
+            </div>
+
+            <div class="main__detail-form">
+                <input type="text" id="nameInput" placeholder="Ваше ім'я">
+                <input type="text" id="phoneInput" placeholder="Номер телефону">
+                <input type="text" id="commentInput" placeholder="Коментар">
+                <button onclick="sendMessage()">Надіслати</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+<script>
+    function sendMessage() {
+        // Замініть YOUR_BOT_TOKEN і YOUR_CHAT_ID на власний токен бота та ID чату
+        const botToken = '6701334653:AAH8JQTNSUX-Uq1JydzzozcLXb1Y08_sai4';
+        const chatId = '-1002081559707';
+
+        const name = document.getElementById('nameInput').value;
+        const phone = document.getElementById('phoneInput').value;
+        const comment = document.getElementById('commentInput').value;
+
+        const message = `
+            Головна форма:
+            Ім'я: ${name}
+            Телефон: ${phone}
+            Коментар: ${comment}
+        `;
+
+        const telegramApiUrl = `https://api.telegram.org/bot${botToken}/sendMessage`;
+
+        // Відправка повідомлення за допомогою Axios
+        axios.post(telegramApiUrl, {
+            chat_id: chatId,
+            text: message,
+            parse_mode: 'HTML',
+        })
+        .then(response => {
+            console.log('Повідомлення відправлено успішно:', response);
+        })
+        .catch(error => {
+            console.error('Помилка відправлення повідомлення:', error);
+        });
+    }
+</script>
+
+</body>
+</html>

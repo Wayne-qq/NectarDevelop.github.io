@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Розробка сайтів</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="media.css">
+    <script src='main.js'></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <img class="logo" src="./img/logo.svg" alt="">
+                <a class="nav__link"  href="index.html">Про нас</a>
+                <a class="nav__link nav__link-cases"  href="./portfolio.html">Кейси</a>
+                <a class="nav__link"  href="./services.html">Послуги</a>
+                <a class="button" href="tel:0993373240">Зателефонувати</a>
+                <a class="burger" href="#" onclick="toggleMenu()"><img src="./img/burger.svg" alt=""></a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="mobile__menu">
+        <div class="container__tel">
+            <div class="burger__top">
+                <p class="logo__burger">WEB QUESTER</p>
+                <a class="close__burger" href="#"><img src="./img/burger__img.svg" alt=""></a>
+            </div>  
+            <h1 class="burger__h1">Розробка сайту <br><span>під ключ</span></h1>
+    
+    
+            <div class="box__nav">
+                <div class="string__box-burger">
+                    <div class="string__burger">
+                        <img src="./img/Ellipse.svg" alt="">
+                        <a href="./index.html" class="string__a">Про нас</a>
+                    </div>
+            
+                    <div class="string__burger">
+                        <img src="./img/Ellipse.svg" alt="">
+                        <a href="./portfolio.html" class="string__a">Кейси</a>
+                    </div>
+            
+                    <div class="string__burger">
+                        <img src="./img/Ellipse.svg" alt="">
+                        <a href="./services.html" class="string__a">Послуги</a>
+                    </div>
+                </div>
+                <img class="burger__cat" src="./img/burger__cat-img.svg" alt="">  
+            </div>
+    
+          
+    
+    
+            <div class="burger__bottom">
+                <p class="int__p">Цікаво?</p>
+    
+            <a class="burger__button" href="./form.html">Обговорити проект</a>
+            </div>
+    
+        </div>
+    </div> 
+
+    <main class="main">
+        <div class="container">
+             <div class="portfolio__list">
+                <div class="portfolio__info">
+                    <h1>Допоможемо вашому бізнесу досягти <span>нових висот</span></h1>
+                    <p>Веб-сайт, спроектований для вашого бізнесу</p>
+                    <a class="button__services-info" href="./form.html">Обговорити проeкт</a>
+                </div>
+                <img src="./img/cat-portfolio-img.svg" alt="">
+            </div>
+
+
+
+            
+            <h4 class="project__h4">Наші проекти</h4>
+            <div class="cases__main-info">
+                <div class="ceses__main-portfolio">
+                    <div class="cases__portfolio-img">
+                        <img class="portfolio__img img-1 active" src="./img/port-1.svg" alt="">
+                        <img class="portfolio__img img-2" src="./img/port-2.png" alt="">
+                        <img class="portfolio__img img-3" src="./img/port-3.svg" alt="">
+                    </div>
+                    <div class="slider__cases">
+                        <button class="left__button-cases" onclick="changeSlide(-1)">
+                            <img class="left__button-img" src="./img/left-arrow-cases (1).svg" alt="">
+                        </button>
+                        <button class="right__button-cases" onclick="changeSlide(1)">
+                            <img class="right__button-img" src="./img/right-arrow-cases.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+
+                    <div class="cases__portfolio-text">
+                        <h4> Унікальні рішення <br>для вас</h4>
+                        <p>Вибір наших веб-рішень - це вибір високоякісного дизайну, функціональності та стратегічного підходу.</p>
+                        <p>Ми допоможемо вам здобути конкурентну перевагу в онлайн-середовищі.</p>
+                    </div>
+                
+                
+            </div>
+        
+
+        
+
+                
+        
+
+
+            
+                
+
+            
+
+
+            <div class="reviews__list">
+                <div class="reviews__description">
+                    <h4 class="reviews__h4">Що говорять про нас замовники</h4>
+                    <p> Що говорять про нас <br> замовники</p>
+
+                    <div class="reviews__bottom-box">
+                        <div class="reviews__box">
+                            <img class="reviews__box-img rev1 active" src="./img/reviews-img.svg" alt="">
+                            <img class="reviews__box-img rev2" src="./img/reviews-img-2.svg" alt="">
+                        
+                            <div class="reviews__button">
+                                <button class="top__reviews" onclick="changeReview(-1)">
+                                    <img src="./img/arrow-top.svg" alt="">
+                                </button>
+                                <button class="bottom__reviews" onclick="changeReview(1)">
+                                    <img class="bottom__reviews-img" src="./img/arrow-bottom.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                            <div class="button__reviews-mobile">
+                                <button class="top__reviews-cases" onclick="changeReview(-1)">
+                                    <img class="mobile__button-img" src="./img/left-arrow-cases (1).svg" alt="">
+                                </button>
+                                <button class="bottom__reviews-cases" onclick="changeReview(1)">
+                                    <img class="mobile__button-img" src="./img/right-arrow-cases.svg" alt="">
+                                </button>
+                            </div>
+                         <img class="reviews__cat" src="./img/reviews-cat.svg" alt="">
+                    </div>
+
+                </div>
+            </div>
+
+                
+
+                
+
+                
+
+            </div>
+        </div>
+    </div>
+    </main>
+
+
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__nav">
+                <div class="footer__contact">   
+                    <h4>Контакти</h4>
+                    <p>На зв'язку 12 </p>
+                    <p>email@com.ua</p>
+                    <a href="tel:0993373240">(099)33-73-240</a>
+                    <div class="footer__icons">
+                        <a href=""><img src="./img/inst=logo.svg" alt=""></a>
+                        <a href=""><img src="./img/viber-logo.svg" alt=""></a>
+                        <a href="http://t.me/Viktor_345"> <img src="./img/telegram-logo.svg" alt=""></a>
+                    </div>
+                </div>
+
+                <div class="footer__contact">   
+                    <h4>Про нас</h4>
+                    <p>Сайти Київ</p>
+                    <div class="link__footer">
+                        <a href="#">Прайс</a>
+                        <a href="#">Послуги</a>
+                        <a href="#">Відгуки</a>
+                    </div>
+                </div>
+
+                <div class="footer__contact">   
+                    <h4>Наші послуги</h4>
+                    <p>Корпоративні сайти</p>
+                    <p>Ленгінг пейдж</p>
+                    <p>Сайт каталог</p>
+                    <p>Інтернет магазин</p>
+                    <p>Дизайн сайту</p>
+                    <p>Підтримка сайту</p>
+                    <p>Оптимізація сайту</p>
+                </div>
+                
+            </div>
+        </div>
+    </footer>  
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var elementsToAnimate = document.querySelectorAll(".nav, .portfolio__list img, .portfolio__info, .button__services-info, .cases__name, .cases__main-info, .ceses__main-portfolio, .cases__portfolio-img, .portfolio__img-1, .slider__cases, .left__button-cases, .left__button-img, .right__button-cases, .cases__portfolio-text, .cases__portfolio-text h4, .cases__portfolio-text p, .reviews__description, .reviews__h4, .reviews__description p, .reviews__button, .top__reviews, .bottom__reviews, .bottom__reviews-img");
+        
+            var sr = ScrollReveal();
+        
+            sr.reveal(elementsToAnimate, {
+                duration: 800,
+                origin: "bottom",
+                distance: "30px",
+                viewFactor: 0.5,
+            });
+        });
+
+
+
+        function toggleMenu() {
+        var mobileMenu = document.querySelector('.mobile__menu');
+        var allContainers = document.querySelectorAll('.container');
+
+        mobileMenu.classList.toggle('mobile__menu--visible');
+
+        allContainers.forEach(function(container) {
+            if (mobileMenu.classList.contains('mobile__menu--visible')) {
+                container.style.display = 'none';
+            } else {
+                container.style.display = 'block';
+            }
+        });
+    }
+
+    document.querySelector('.close__burger').addEventListener('click', function() {
+        var mobileMenu = document.querySelector('.mobile__menu');
+        var allContainers = document.querySelectorAll('.container');
+
+        mobileMenu.classList.remove('mobile__menu--visible');
+
+        allContainers.forEach(function(container) {
+            container.style.display = 'block';
+        });
+    });
+
+
+
+
+    let currentSlide = 1;
+    const totalSlides = document.querySelectorAll('.portfolio__img').length;
+
+    function changeSlide(n) {
+        currentSlide += n;
+
+        if (currentSlide > totalSlides) {
+            currentSlide = 1;
+        } else if (currentSlide < 1) {
+            currentSlide = totalSlides;
+        }
+
+        updateSlide();
+    }
+
+    function updateSlide() {
+        const slides = document.querySelectorAll('.portfolio__img');
+
+        slides.forEach(slide => {
+            slide.classList.remove('active');
+        });
+
+        slides[currentSlide - 1].classList.add('active');
+    }
+
+
+
+
+
+
+
+
+
+
+    let currentReview = 1;
+    const totalReviews = document.querySelectorAll('.reviews__box-img').length;
+
+    function changeReview(n) {
+        currentReview += n;
+
+        if (currentReview > totalReviews) {
+            currentReview = 1;
+        } else if (currentReview < 1) {
+            currentReview = totalReviews;
+        }
+
+        updateReview();
+    }
+
+    function updateReview() {
+        const reviews = document.querySelectorAll('.reviews__box-img');
+
+        reviews.forEach(review => {
+            review.classList.remove('active');
+        });
+
+        reviews[currentReview - 1].classList.add('active');
+    }
+    
+
+    </script> 
+    
+    
+</body>
+</html>
