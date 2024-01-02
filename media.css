@@ -1978,6 +1978,8 @@
     .main__detail-form input {
         max-width: 450px;
     }
+
+
 }
 
 @media screen and (max-width: 542px) {
@@ -1990,6 +1992,12 @@
         padding: 18px 0px;
         font-size: 18px;
     }
+
+    .main__form-detail {
+        height: 100vh;
+        background: #0C0C0C;
+        display: flex;
+      }
 
 }
 
@@ -2035,7 +2043,7 @@
 
     .container__form h1 {
         font-size: 28px;
-        margin-top: 150px;
+        margin-top: 100px;
       }
     .main__detail-form input {
         width: 270px;
