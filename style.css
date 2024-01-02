@@ -461,7 +461,9 @@ html{
     box-shadow: 56px 101px 127.5px 0px rgba(212, 52, 179, 0.33);
 }
 
-
+.form__cat-mobile {
+  filter: drop-shadow(20px 66px 131.4px rgba(205, 17, 226, 0.99));
+}
 
 
 
@@ -1144,7 +1146,7 @@ html{
   }
 
   .mobile__menu {
-    background-color: #1B1B1B;
+    background-color: #000000;
   }
 
 
@@ -1193,7 +1195,7 @@ html{
 
   .box__nav {
     display: flex;
-    margin-top: 87px;
+    margin-top: 45px;
     align-items: center;
     justify-content: space-between;
 }
@@ -1261,10 +1263,9 @@ html{
 }
 
 .int__p {
-  margin-bottom: 10px;
   color: #EAEAEA;
   font-family: Inter;
-  margin-top: 70px;
+  margin-top: 50px;
   font-size: 25px;
   font-weight: 300;
   line-height: 78.665%; /* 15.733px */
@@ -1276,7 +1277,7 @@ html{
   font-family: Inter;
   font-size: 16px;
   font-weight: 800;
-  margin-bottom: 190px;
+  margin-bottom: 300px;
   line-height: 78.665%; 
   border-radius: 26px;
   width: 195px;
@@ -1317,7 +1318,7 @@ html{
 
 
 .main__form-detail {
-   height: calc(100vh + 30px);
+  height: calc(100vh + 30px);
   background: #0C0C0C;
   display: flex;
 }
