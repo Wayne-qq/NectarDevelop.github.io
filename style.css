@@ -1317,7 +1317,7 @@ html{
 
 
 .main__form-detail {
-  height: 1130px;
+   height: calc(100vh + 30px);
   background: #0C0C0C;
   display: flex;
 }
