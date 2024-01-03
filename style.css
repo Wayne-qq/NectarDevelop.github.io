@@ -37,23 +37,20 @@ html{
   }
 
  body {
-  background-color: #121212;
+  background-color: white;
   color: #FE0190;
  }
 
 
   .header {
-    mix-blend-mode: exclusion; 
     background-color: #121212;
   }
 
   .main{
-    mix-blend-mode: exclusion; 
     background-color: #121212;
   }
 
   .footer {
-    mix-blend-mode: exclusion; 
     background: #CD11E2;
 
   }
