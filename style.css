@@ -47,7 +47,7 @@ html{
   }
 
   .main{
-    background-color: #9c9c9c;
+    background-color: #121212;
   }
 
   .footer {
@@ -1036,7 +1036,7 @@ html{
     font-family: Inter;
     font-size: 48px;
     font-weight: 800;
-    line-height: 142.807%; /* 68.547px */
+    line-height: 142.807%;
     background: linear-gradient(270deg, #D016FF 60.15%, #F007B0 101.32%);
     background-clip: text;
     -webkit-background-clip: text;
