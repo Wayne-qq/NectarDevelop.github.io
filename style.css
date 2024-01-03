@@ -42,14 +42,17 @@ html{
 
 
   .header {
+    mix-blend-mode: exclusion; 
     background: #121212;
   }
 
   .main{
+    mix-blend-mode: exclusion; 
     background: #121212;
   }
 
   .footer {
+    mix-blend-mode: exclusion; 
     background: #CD11E2;
 
   }
