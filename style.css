@@ -1,0 +1,234 @@
+html{
+    box-sizing: border-box;
+  }
+  
+  *,
+  *::before,
+  *::after{
+    box-sizing: inherit;
+  }
+  
+  a{
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  li{
+    list-style: none;
+  }
+  
+  img{
+    max-width: 100%;
+  }
+
+
+  .header {
+    background-color: #FAF5FF;
+  }
+
+  .main {
+    background-color: #FAF5FF;
+  }
+
+  .container {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .nav  {
+    padding-top: 23px;
+    display: flex;
+    align-items: center;
+  }
+
+  .nav__menu {
+    color: #515151;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-left: 31px;
+    position: relative;
+    transition: color 0.5s ease; /* Додано плавну анімацію переходу кольору */
+}
+
+.nav__menu:hover {
+    color: #C566FF; /* Фіолетовий колір */
+}
+
+
+
+
+  .logo {
+    margin-right: auto;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-weight: 800;
+    background: linear-gradient(135deg, #CE9FFC 0%, #7367F0 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .button__phone-header {
+    position: relative;
+    display: inline-block;
+    padding: 9px 15px;
+    border-radius: 21px;
+    border: 1px solid #CF9FFF;
+    overflow: hidden;
+}
+
+.button__phone-header::before {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-color: #CF9FFF; /* Зелений колір */
+    border-radius: 50%;
+    animation: moveAround 2.7s linear infinite;
+}
+
+@keyframes moveAround {
+    0% { top: -6px; left: -6px; }
+    25% { top: -6px; left: calc(100% - 6px); }
+    50% { top: calc(100% - 6px); left: calc(100% - 6px); }
+    75% { top: calc(100% - 6px); left: -6px; }
+    100% { top: -6px; left: -6px; }
+}
+
+
+
+
+
+
+
+
+
+  .main__page h1 {
+    padding-top: 280px;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 100px;
+    font-weight: 800;
+    line-height: 151px;
+    background: linear-gradient(135deg, #C387FF 0%, #7367F0 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 214px;
+    overflow: hidden;
+   
+}
+
+.detail__button p {
+    cursor: pointer;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.main__page h1 span {
+    display: inline; /* Замінює inline-block */
+    opacity: 0;
+    animation: appear 0.5s forwards;
+}
+
+
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.main__page h1 span.animated-letter {
+    display: inline;
+    opacity: 0;
+    animation: appear 0.3s forwards infinite; /* Додайте 'infinite' для зациклення */
+}
+
+/* Додайте стилі для анімації SPOUK */
+.main__page h1 span:first-child {
+    opacity: 1;
+    animation: none; /* Відключіть анімацію для першої букви (SPOUK) */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        .detail__button p {
+            margin: 0;
+        }
+
+        svg {
+            animation: moveUpDown 2s infinite;
+        }
+
+        @keyframes moveUpDown {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(100%);
+            }
+        }
+
+  .detail__button {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 100px;
+  }
+
+  .detail__button p {
+    margin: 0 auto;
+    color: #696969;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 200;
+    margin-bottom: 11px;
+  }
+
+  .detail__button svg {
+    margin: 0 auto;
+  }
