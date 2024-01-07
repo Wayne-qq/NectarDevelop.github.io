@@ -74,15 +74,6 @@ html{
 
 
 
-
-
-
-
-
-
-
-
-
   .button__phone-header {
     position: relative;
     display: inline-block;
@@ -112,14 +103,8 @@ html{
 
 
 
-
-
-
-
-
-
   .main__page h1 {
-    padding-top: 280px;
+    padding-top: 150px;
     text-align: center;
     font-family: Montserrat;
     font-size: 100px;
@@ -129,7 +114,7 @@ html{
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin-bottom: 214px;
+    margin-bottom: 154px;
     overflow: hidden;
    
 }
