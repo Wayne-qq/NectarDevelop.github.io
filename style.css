@@ -23,15 +23,20 @@ html{
 
 
   .header {
-    background-color: #FAF5FF;
+    background-color: #130E17;
   }
 
   .main {
-    background-color: #FAF5FF;
+    background-color: #130E17;
+  }
+
+  .footer {
+    background-color: #B577FF;
   }
 
   .container {
-    max-width: 1400px;
+    max-width: 1420px;
+    padding: 0px 10px;
     margin: 0 auto;
   }
 
@@ -42,7 +47,7 @@ html{
   }
 
   .nav__menu {
-    color: #515151;
+    color: #EDEDED;
     font-family: Montserrat;
     font-size: 20px;
     font-style: normal;
@@ -64,6 +69,7 @@ html{
     margin-right: auto;
     font-family: Montserrat;
     font-size: 36px;
+    text-transform: uppercase;
     font-weight: 800;
     background: linear-gradient(135deg, #CE9FFC 0%, #7367F0 100%);
     background-clip: text;
@@ -182,7 +188,7 @@ html{
             margin: 0;
         }
 
-        svg {
+        .detail__button svg{
             animation: moveUpDown 2s infinite;
         }
 
@@ -200,7 +206,7 @@ html{
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    padding-bottom: 100px;
+    padding-bottom: 62px;
   }
 
   .detail__button p {
@@ -217,3 +223,267 @@ html{
   .detail__button svg {
     margin: 0 auto;
   }
+
+
+
+  .line__d {
+    width: 1px;
+    height: 137px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    background: #DDA4FF;
+    margin: 0 auto;
+    margin-bottom: 45px;
+  }
+
+  .ellipse__d {
+    width: 19px;
+    height: 18px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    border: 1px solid #DDA4FF;
+    margin: 0 auto;
+  }
+
+
+
+  .title__name {
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 56px;
+    background: linear-gradient(135deg, #CE9FFC 0%, #7367F0 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .title__detail {
+    margin-top: 232px;
+    margin-bottom: 65px;
+
+  }
+
+  .about__us p {
+    margin: 46px 0px;
+    color: #6B6B6B;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 99px; 
+  }
+
+
+
+  .line__up {
+    width: 1px;
+height: 137px;
+flex-shrink: 0;
+border-radius: 5px;
+background: #DDA4FF;
+margin: 0 auto;
+margin-top: 45px;
+  }
+
+  .ellipse__up {
+    width: 19px;
+    height: 18px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    border: 1px solid #DDA4FF;
+    margin: 0 auto;
+  }
+
+
+  .services__button {
+    margin-top: 62px;
+  }
+
+
+  .services__selection {
+    background: #19161C;
+    border-radius: 16px;
+    border: 1px solid #9079F4;
+    box-shadow: 0px 4px 250px 34px rgba(138, 117, 243, 0.10);
+    margin-top: 79px;
+    display: flex;
+    padding: 0px 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  .services__info {
+    display: flex;
+    flex-wrap: wrap; /* Розрив рядка, якщо не влізає в один рядок */
+    justify-content: space-between;
+    margin-top: 46px;
+  }
+  
+  .title__services,
+  .services__p-info {
+    box-sizing: border-box;
+  }
+  
+  .title__services {
+    margin-top: 46px;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 34px;
+    font-weight: 400;
+    background: linear-gradient(135deg, #CE9FFC 0%, #7367F0 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-radius: 45px;
+    border: 1px solid #CF9FFF;
+    padding: 11px 30px;
+    margin-bottom: 34px;
+  }
+  
+  .services__p-info {
+    color: #6B6B6B;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 57px;
+    max-width: 603px;
+    margin-bottom: 34px; /* Додайте відступ для кращого розділу */
+  }
+
+
+  .portfolio__box {
+    padding: 20px 0px;
+    border-radius: 14px;
+    background: linear-gradient(135deg, #CE9FFC 0%, #7367F0 100%);
+    box-shadow: 0px 4px 164.2px 14px rgba(132, 113, 242, 0.48);
+    margin-bottom: 100px;
+  }
+
+  .portfolio {
+    margin-top: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .portfolio__name {
+    margin-top: 60px;
+    margin-bottom: 100px;
+  }
+
+  .portfolio__page {
+  }
+
+  .portfolio {
+      width: 90%;
+      padding-top: 46px;
+      margin: 0 auto;
+      padding-bottom: 46px;
+  }
+  
+  .portfolio img {
+    width: 95%;
+    height: auto;
+  }
+
+  .form__title {
+    margin-top: 40px;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 99px;
+    background: linear-gradient(135deg, #CE9FFC 0%, #7367F0 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .form {
+    margin-top: 40px;
+    margin-bottom: 100px;
+    height: 468px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 14px;
+    border: 1px solid #B0B0B0;
+    background: linear-gradient(135deg, #A84FFF 0%, #201966 100%);
+    box-shadow: 0px 21px 250px -35px rgba(199, 155, 251, 0.32);
+  }
+
+  .form input {
+    border-radius: 41px;
+    border: 1px solid #818181;
+    background: rgba(23, 22, 24, 0.76);
+    color: #C283FF;
+text-align: center;
+font-family: Montserrat;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: 23px; /* 412.5% */
+padding: 23px 216px;
+  }
+  .input__form {
+    margin: 0 auto;
+  }
+
+  .form__first {
+    margin-top: 71px;
+  }
+
+  .form__last {
+    margin-top: 46px;
+  }
+
+
+  .footer {
+    display: flex;
+    padding-bottom: 30px;
+  }
+
+.footer__nav {
+    margin: 0 auto;
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+
+  .contacts {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer__title {
+    color: #FFF;
+text-align: center;
+font-family: Montserrat;
+font-size: 24px;
+font-weight: 700;
+line-height: 99px;
+  }
+
+  .footer a {
+    color: #FFF;
+text-align: center;
+font-family: Montserrat;
+font-size: 24px;
+font-weight: 300;
+line-height: 50px; 
+  }
+
+
+  .iid {
+    padding-bottom: 40px;
+  }
+
+
+
+  

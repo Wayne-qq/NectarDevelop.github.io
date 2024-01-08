@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Spuk - розробка сайтів</title>
+    <title>Spouk - розробка сайтів</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
     <link rel="stylesheet" href="reset.css">
@@ -11,6 +11,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
     <script src='./app.js'></script>
 </head>
 <body>
@@ -22,6 +25,7 @@
                 <a href="" class="nav__menu">Послуги</a>
                 <a href="" class="nav__menu">Наші роботи</a>
                 <a href="" class="nav__menu">Контакти</a>
+                <a href="" class="nav__menu">Відгуки</a>
                 <a href="" class="nav__menu button__phone-header">Зателефонувати</a>
             </nav>
         </div>
@@ -31,15 +35,165 @@
         <div class="container">
             <div class="main__page">
                 <h1 id="animated-text"> - РОЗРОБКА САЙТУ ТА ДИЗАЙНУ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
-                <div class="detail__button">
+                <a class="detail__button">
                     <p>Детальніше</p>
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="11" viewBox="0 0 24 11" fill="none">
                         <rect x="0.734375" width="14.9136" height="1.2" rx="0.6" transform="rotate(37.6446 0.734375 0)" fill="#696969"/>
                         <rect width="14.9262" height="1.2" rx="0.6" transform="matrix(-0.791814 0.610762 0.610762 0.791814 22.6953 0)" fill="#696969"/>
                     </svg>
+                </a>
+            </div>
+
+            <div class="detail__page">
+                <!-- <div class="line__down">
+                    <div class="line__d"></div>
+                    <div class="ellipse__d"></div>
+                </div> -->
+                <h2 class="title__name title__detail">Про нас</h2>
+                <div class="about__us">
+                    <p>"Spouk" - студія, що спеціалізується на створенні дизайну, розробці веб-сайтів та створенні телеграм-ботів. Ми - велика та професійна команда, яка допоможе вашому бізнесу піднятися на новий рівень.</p>
                 </div>
+
+                <a class="detail__button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="11" viewBox="0 0 24 11" fill="none">
+                        <rect x="0.734375" width="14.9136" height="1.2" rx="0.6" transform="rotate(37.6446 0.734375 0)" fill="#696969"/>
+                        <rect width="14.9262" height="1.2" rx="0.6" transform="matrix(-0.791814 0.610762 0.610762 0.791814 22.6953 0)" fill="#696969"/>
+                    </svg>
+                </a>
+            </div>
+
+            <div class="services__page">
+                <!-- <div class="line__down">
+                    <div class="line__d"></div>
+                    <div class="ellipse__d"></div>
+                </div> -->
+
+                    <h2 class="title__name services__tittle">
+                        Наші послуги
+                    </h2>
+
+                <div class="services__info">
+                    <div class="services__selection">
+                        <p class="title__services">Дизайн сайту</p>
+                        <p class="services__p-info">Наша послуга з дизайну веб-сайтів гарантує вам високу якість, оперативність та індивідуальний підхід. Ми враховуємо всі побажання клієнта, ставимо завдання створити дизайн, який не лише естетичний, але й ефективний у залученні аудиторії та підвищенні конверсії.</p>
+                    </div>
+                    <div class="services__selection">
+                        <p class="title__services">Створення лендінгу</p>
+                        <p class="services__p-info">Наша послуга з розробки лендінгу гарантує швидке, якісне та індивідуальне створення ефективної веб-сторінки. Ми враховуємо усі вимоги клієнта та прагнемо створити лендінг, що не лише привабливий, але й спрямований на досягнення поставлених цілей..</p>
+                    </div>
+
+                    <div class="services__selection">
+                        <p class="title__services">Багатосторінковий сайт</p>
+                        <p class="services__p-info">Наша команда створює унікальний цифровий простір, втілюючи вашу історію в кожній сторінці. Технічна вправність і креативний підхід гарантують статус центру онлайн-взаємодії, надаючи унікальний досвід для відвідувачів.</p>
+                    </div>
+                    <div class="services__selection">
+                        <p class="title__services">Інтернет магазин</p>
+                        <p class="services__p-info">Команда експертів готова створити для вас інтернет-магазин з передовими технологіями та креативним дизайном, який забезпечить стильний вигляд та зручність у використанні. Ми привернемо широку аудиторію і забезпечимо високий рівень конверсії.</p>
+                    </div>
+
+                    <div class="services__selection">
+                        <p class="title__services">Телеграм бот</p>
+                        <p class="services__p-info">Ми створимо телеграм-бота для швидкого та оптимізованого обслуговування клієнтів, що автоматизує процеси та полегшить доступ до інформації. Наш бот забезпечить ефективну комунікацію, допомагаючи вирішувати питання клієнтів і покращуючи їхній досвід взаємодії з вашим бізнесом.</p>
+                    </div>
+                    <div class="services__selection">
+                        <p class="title__services">SEO-оптимізація</p>
+                        <p class="services__p-info">Ми забезпечимо ефективну SEO-оптимізацію для залучення безкоштовних клієнтів через Google. Наші фахівці використають передові стратегії, щоб підняти ваш сайт у рейтингу пошукових результатів, поліпшити його видимість та збільшити трафік.</p>
+                    </div>
+                </div>
+
+
+                <a href="https://spouk.online/" class="detail__button services__button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="11" viewBox="0 0 24 11" fill="none">
+                        <rect x="0.734375" width="14.9136" height="1.2" rx="0.6" transform="rotate(37.6446 0.734375 0)" fill="#696969"/>
+                        <rect width="14.9262" height="1.2" rx="0.6" transform="matrix(-0.791814 0.610762 0.610762 0.791814 22.6953 0)" fill="#696969"/>
+                    </svg>
+                </a>
+            </div>
+
+            <div class="portfolio__page">
+                <div class="line__down iie">
+                    <div class="line__d"></div>
+                    <div class="ellipse__d"></div>
+                </div>
+
+                <h2 class="title__name portfolio__name">
+                    Наші роботи
+                </h2>
+
+                <div class="portfolio__box">
+                    <div class="portfolio">
+                        <img src="./img/port-1.png" alt="">
+                        <img src="./img/port-1.png" alt="">
+                        <img src="./img/port-1.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="form__page">
+                <div class="line__top">
+                    <div class="ellipse__up"></div>
+                    <div class="line__up"></div>
+                </div>
+                <p class="form__title">Надішліть нам повідомленя</p>
+
+                <div class="form">
+                    <div class="input__form form__first">
+                        <input type="text" placeholder="Ваше імя">
+                    </div>
+                    <div class="input__form form__last">
+                        <input type="number" placeholder="Номер телефону">
+                    </div>
+                    <div class="input__form form__last">
+                        <input type="text" placeholder="Повідомленя">
+                    </div>
+                </div>
+            </div>
+
+            <a class="detail__button">
+                <p>Контакти</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="11" viewBox="0 0 24 11" fill="none">
+                    <rect x="0.734375" width="14.9136" height="1.2" rx="0.6" transform="rotate(37.6446 0.734375 0)" fill="#696969"/>
+                    <rect width="14.9262" height="1.2" rx="0.6" transform="matrix(-0.791814 0.610762 0.610762 0.791814 22.6953 0)" fill="#696969"/>
+                </svg>
+            </a>
+            <div class="line__top iid">
+                <div class="ellipse__up"></div>
+                <div class="line__up"></div>
             </div>
         </div>
     </main>
+    <footer class="footer">
+            <div class="footer__nav">
+                <div class="contacts">
+                    <p class="footer__title">Контакти</p>
+                    <a href="">099-33-73-240</a>
+                    <a href="">spoukdevelop@gmail.com</a>
+                    <a href="">tg: @Viktor365</a>
+                </div>
+
+                <div class="contacts">
+                    <p class="footer__title">Соціальні мережі</p>
+                    <a href="">Spoudev</a>
+                    <a href="">Spouk.online</a>
+                </div>
+            </div>
+    </footer>
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<script>
+ $(document).ready(function(){
+        $('.portfolio').slick({
+            slidesToShow: 1,
+            arrows: false,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 4000, // змініть це значення на бажану швидкість автовідтворення
+        });
+    });
+
+</script>
+
 </body>
 </html>
