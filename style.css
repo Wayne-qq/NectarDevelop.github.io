@@ -1,489 +1,118 @@
 html{
-    box-sizing: border-box;
-  }
-  
-  *,
-  *::before,
-  *::after{
-    box-sizing: inherit;
-  }
-  
-  a{
-    color: inherit;
-    text-decoration: none;
-  }
-  
-  li{
-    list-style: none;
-  }
-  
-  img{
-    max-width: 100%;
-  }
-
-
-  .header {
-    background-color: #130E17;
-  }
-
-  .main {
-    background-color: #130E17;
-  }
-
-  .footer {
-    background-color: #B577FF;
-  }
-
-  .container {
-    max-width: 1420px;
-    padding: 0px 10px;
-    margin: 0 auto;
-  }
-
-  .nav  {
-    padding-top: 23px;
-    display: flex;
-    align-items: center;
-  }
-
-  .nav__menu {
-    color: #EDEDED;
-    font-family: Montserrat;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-    margin-left: 31px;
-    position: relative;
-    transition: color 0.5s ease; /* Додано плавну анімацію переходу кольору */
+  box-sizing: border-box;
 }
 
-.nav__menu:hover {
-    color: #C566FF; /* Фіолетовий колір */
+*,
+*::before,
+*::after{
+  box-sizing: inherit;
+}
+
+a{
+  color: inherit;
+  text-decoration: none;
+}
+
+li{
+  list-style: none;
+}
+
+img{
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1919px;
+  padding: 13px 15px;
+  margin: 0 auto;
+}
+body {
+  background-color: #09000E;
 }
 
 
-
-
-  .logo {
-    margin-right: auto;
-    font-family: Montserrat;
-    font-size: 36px;
-    text-transform: uppercase;
-    font-weight: 800;
-    background: linear-gradient(135deg, #CE9FFC 0%, #7367F0 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-
-
-
-
-  .button__phone-header {
-    position: relative;
-    display: inline-block;
-    padding: 9px 15px;
-    border-radius: 21px;
-    border: 1px solid #CF9FFF;
-    overflow: hidden;
+.header {
+  background-color: #09000E;
 }
 
-.button__phone-header::before {
-    content: "";
-    position: absolute;
-    width: 12px;
-    height: 12px;
-    background-color: #CF9FFF; /* Зелений колір */
-    border-radius: 50%;
-    animation: moveAround 2.7s linear infinite;
+.main__page {
+  background: url(./img/bg__main-page.png);
+  height: 100vh;
 }
 
-@keyframes moveAround {
-    0% { top: -6px; left: -6px; }
-    25% { top: -6px; left: calc(100% - 6px); }
-    50% { top: calc(100% - 6px); left: calc(100% - 6px); }
-    75% { top: calc(100% - 6px); left: -6px; }
-    100% { top: -6px; left: -6px; }
+.logo {
+  text-shadow: 73px 4px 250px #FC57C9;
+  font-family: Montserrat;
+  font-size: 36px;
+  font-weight: 800;
+  background: linear-gradient(135deg, #FF6FD8 0%, #3813C2 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.phone__btn {
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 13.5px 49px;
+  border-radius: 130px;
+  border: 1px solid #FFF;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
 }
 
 
-
-  .main__page h1 {
-    padding-top: 150px;
-    text-align: center;
-    font-family: Montserrat;
-    font-size: 100px;
-    font-weight: 800;
-    line-height: 151px;
-    background: linear-gradient(135deg, #C387FF 0%, #7367F0 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin-bottom: 154px;
-    overflow: hidden;
-   
-}
-
-.detail__button p {
-    cursor: pointer;
-}
-
-@keyframes appear {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-.main__page h1 span {
-    display: inline; /* Замінює inline-block */
-    opacity: 0;
-    animation: appear 0.5s forwards;
-}
-
-
-
-@keyframes appear {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-.main__page h1 span.animated-letter {
-    display: inline;
-    opacity: 0;
-    animation: appear 0.3s forwards infinite; /* Додайте 'infinite' для зациклення */
-}
-
-/* Додайте стилі для анімації SPOUK */
-.main__page h1 span:first-child {
-    opacity: 1;
-    animation: none; /* Відключіть анімацію для першої букви (SPOUK) */
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        .detail__button p {
-            margin: 0;
-        }
-
-        .detail__button svg{
-            animation: moveUpDown 2s infinite;
-        }
-
-        @keyframes moveUpDown {
-            0%, 100% {
-                transform: translateY(0);
-            }
-            50% {
-                transform: translateY(100%);
-            }
-        }
-
-  .detail__button {
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 62px;
-  }
-
-  .detail__button p {
-    margin: 0 auto;
-    color: #696969;
-    text-align: center;
-    font-family: Montserrat;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 200;
-    margin-bottom: 11px;
-  }
-
-  .detail__button svg {
-    margin: 0 auto;
-  }
-
-
-
-  .line__d {
-    width: 1px;
-    height: 137px;
-    flex-shrink: 0;
-    border-radius: 5px;
-    background: #DDA4FF;
-    margin: 0 auto;
-    margin-bottom: 45px;
-  }
-
-  .ellipse__d {
-    width: 19px;
-    height: 18px;
-    flex-shrink: 0;
-    border-radius: 20px;
-    border: 1px solid #DDA4FF;
-    margin: 0 auto;
-  }
-
-
-
-  .title__name {
-    text-align: center;
-    font-family: Montserrat;
-    font-size: 48px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 56px;
-    background: linear-gradient(135deg, #CE9FFC 0%, #7367F0 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-
-  .title__detail {
-    margin-top: 232px;
-    margin-bottom: 65px;
-
-  }
-
-  .about__us p {
-    margin: 46px 0px;
-    color: #C6C6C6;
-    text-align: center;
-    font-family: Montserrat;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 99px; 
-  }
-
-
-
-  .line__up {
-    width: 1px;
-height: 137px;
-flex-shrink: 0;
-border-radius: 5px;
-background: #DDA4FF;
+.main__page h1 {
+  color: #FFECFB;
+text-shadow: 73px 4px 250px #FC57C9;
+font-family: Montserrat;
+font-size: 300px;
+font-weight: 800;
 margin: 0 auto;
-margin-top: 45px;
-  }
-
-  .ellipse__up {
-    width: 19px;
-    height: 18px;
-    flex-shrink: 0;
-    border-radius: 20px;
-    border: 1px solid #DDA4FF;
-    margin: 0 auto;
-  }
-
-
-  .services__button {
-    margin-top: 62px;
-  }
-
-
-  .services__selection {
-    background: #19161C;
-    border-radius: 16px;
-    border: 1px solid #9079F4;
-    box-shadow: 0px 4px 250px 34px rgba(138, 117, 243, 0.10);
-    margin-top: 79px;
-    display: flex;
-    padding: 0px 20px;
-    flex-direction: column;
-    align-items: center;
-  }
-
-
-  .services__info {
-    display: flex;
-    flex-wrap: wrap; /* Розрив рядка, якщо не влізає в один рядок */
-    justify-content: space-between;
-    margin-top: 46px;
-  }
-  
-  .title__services,
-  .services__p-info {
-    box-sizing: border-box;
-  }
-  
-  .title__services {
-    margin-top: 46px;
-    text-align: center;
-    font-family: Montserrat;
-    font-size: 34px;
-    font-weight: 400;
-    background: linear-gradient(135deg, #CE9FFC 0%, #7367F0 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    border-radius: 45px;
-    border: 1px solid #CF9FFF;
-    padding: 11px 30px;
-    margin-bottom: 34px;
-  }
-  
-  .services__p-info {
-    color: #D0D0D0;
-    text-align: center;
-    font-family: Montserrat;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 57px;
-    max-width: 603px;
-    margin-bottom: 34px; /* Додайте відступ для кращого розділу */
-  }
-
-
-  .portfolio__box {
-    padding: 20px 0px;
-    border-radius: 14px;
-    background: linear-gradient(135deg, #CE9FFC 0%, #7367F0 100%);
-    box-shadow: 0px 4px 164.2px 14px rgba(132, 113, 242, 0.48);
-    margin-bottom: 100px;
-  }
-
-  .portfolio {
-    margin-top: 46px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .portfolio__name {
-    margin-top: 60px;
-    margin-bottom: 100px;
-  }
-
-  .portfolio__page {
-  }
-
-  .portfolio {
-      width: 90%;
-      padding-top: 46px;
-      margin: 0 auto;
-      padding-bottom: 46px;
-  }
-  
-  .portfolio img {
-    width: 95%;
-    height: auto;
-  }
-
-  .form__title {
-    margin-top: 40px;
-    text-align: center;
-    font-family: Montserrat;
-    font-size: 48px;
-    font-weight: 400;
-    line-height: 99px;
-    background: linear-gradient(135deg, #CE9FFC 0%, #7367F0 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-
-  .form {
-    margin-top: 40px;
-    margin-bottom: 100px;
-    height: 468px;
-    display: flex;
-    flex-direction: column;
-    border-radius: 14px;
-    border: 1px solid #B0B0B0;
-    background: linear-gradient(135deg, #A84FFF 0%, #201966 100%);
-    box-shadow: 0px 21px 250px -35px rgba(199, 155, 251, 0.32);
-  }
-
-  .form input {
-    border-radius: 41px;
-    border: 1px solid #818181;
-    background: rgba(23, 22, 24, 0.76);
-    color: #C283FF;
 text-align: center;
-font-family: Montserrat;
-font-size: 24px;
-font-style: normal;
-font-weight: 400;
-line-height: 23px; /* 412.5% */
-padding: 23px 216px;
-  }
-  .input__form {
-    margin: 0 auto;
-  }
-
-  .form__first {
-    margin-top: 71px;
-  }
-
-  .form__last {
-    margin-top: 46px;
-  }
-
-
-  .footer {
-    display: flex;
-    padding-bottom: 30px;
-  }
-
-.footer__nav {
-    margin: 0 auto;
-    width: 40%;
-    display: flex;
-    justify-content: space-between;
+margin-top: 30%;
 }
 
-  .contacts {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .footer__title {
-    color: #FFF;
-text-align: center;
-font-family: Montserrat;
-font-size: 24px;
-font-weight: 700;
-line-height: 99px;
-  }
-
-  .footer a {
-    color: #FFF;
-text-align: center;
-font-family: Montserrat;
-font-size: 24px;
-font-weight: 300;
-line-height: 50px; 
-  }
-
-
-  .iid {
-    padding-bottom: 40px;
-  }
+.main__page-block {
+  display: flex;
+}
 
 
 
-  
+.social__line {
+  margin-top: 32%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.viber__logo {
+  margin-top: 26px;
+  margin-bottom: 26px;
+}
+
+.top__line {
+  width: 1px;
+  height: 35px;
+  flex-shrink: 0;
+  border-radius: 12px;
+background: #D9D9D9;
+margin-bottom: 26px;
+}
+
+.bottom__line {
+  margin-top: 26px;
+  width: 1px;
+  height: 35px;
+  flex-shrink: 0;
+  border-radius: 12px;
+background: #D9D9D9;
+}
