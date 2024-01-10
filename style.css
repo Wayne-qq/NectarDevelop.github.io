@@ -36,7 +36,7 @@ body {
 }
 
 .main__page {
-  background: url(./img/bg__main-page.png);
+  background: url(./img/bg__main-page.svg);
   height: 100vh;
 }
 
@@ -51,7 +51,18 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
+
+
+
+
+
+
+
+
+
+
 .phone__btn {
+  position: relative;
   color: #FFF;
   font-family: Montserrat;
   font-size: 20px;
@@ -59,10 +70,46 @@ body {
   line-height: 25px;
   margin-left: auto;
   margin-right: auto;
-  padding: 13.5px 49px;
+  padding: 7px 30px;
   border-radius: 130px;
   border: 1px solid #FFF;
+  overflow: hidden;
+  text-align: center;
 }
+
+.phone__btn::before {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #FD3ECC; /* Зелений кружочок */
+  border-radius: 50%;
+  animation: moveBorder 4s linear infinite;
+}
+
+@keyframes moveBorder {
+  0% {
+    top: 0;
+    left: 0;
+  }
+  25% {
+    top: 0;
+    left: 96.5%;
+  }
+  50% {
+    top: 80%;
+    left: 95%;
+  }
+  75% {
+    top: 80%;
+    left: 0;
+  }
+  100% {
+    top: 0;
+    left: 0;
+  }
+}
+
 
 .nav {
   display: flex;
@@ -71,24 +118,31 @@ body {
 
 
 .main__page h1 {
+  margin-left: 10px;
   color: #FFECFB;
-text-shadow: 73px 4px 250px #FC57C9;
-font-family: Montserrat;
-font-size: 300px;
-font-weight: 800;
-margin: 0 auto;
-text-align: center;
-margin-top: 30%;
+  font-family: Montserrat;
+  font-size: 300px;
+  font-weight: 800;
+  line-height: 250px;
+  text-align: center;
+  margin-left: 11%;
 }
 
+
+
+
+
+
 .main__page-block {
+  margin-top: 33%;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 
 
 .social__line {
-  margin-top: 32%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -116,3 +170,39 @@ margin-bottom: 26px;
   border-radius: 12px;
 background: #D9D9D9;
 }
+
+
+@keyframes moveUpDown {
+  0%, 100% {
+    transform: translateY(0) rotate(90deg);
+  }
+  50% {
+    transform: translateY(50px) rotate(90deg);
+  }
+}
+
+.main__scroll {
+  margin-top: -50px;
+  color: #FFECFB;
+  text-shadow: 73px 4px 250px #FC57C9;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  max-height: 150px;
+  display: flex;
+  margin-right: -6%;
+
+  /* Додайте анімацію до вашого елементу */
+  animation: moveUpDown 2s ease infinite; /* 2s - тривалість анімації, ease - функція швидкості, infinite - безкінечно повторюється */
+}
+/* Додайте цей стиль, якщо ви хочете, щоб анімація починалася при наведенні */
+.main__scroll:hover {
+  animation-play-state: paused;
+}
+
+.main__scroll img {
+  margin-left: 11px;
+  transform: rotate(-90deg);
+}
+
