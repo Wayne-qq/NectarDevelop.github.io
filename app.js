@@ -16,7 +16,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     const container = document.getElementById("clientsContainer");
   
-    const words = ["REELWORL", "CLUEZY", "GAZDA"]; // Додайте інші слова за потребою
+    const words = ["REELWORL", "CLUEZY", "GAZDA"]; 
     for (let i = 0; i < 100; i++) {
       words.forEach((word) => {
         const element = document.createElement("p");
@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function animateNumbers(target, finalValue, duration) {
     let currentValue = 0;
-    const interval = 30; // Інтервал анімації (в мілісекундах)
+    const interval = 30; 
     const steps = Math.ceil(duration / interval);
     const stepValue = (finalValue - currentValue) / steps;
   
@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
           }
         });
       },
-      { threshold: 1 } // Можливо, потрібно налаштувати поріг відображення від 0 до 1
+      { threshold: 1 } 
     );
   
     observer.observe(target);
@@ -85,7 +85,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-  
+
   
   document.addEventListener("DOMContentLoaded", function () {
     const scrollLink = document.getElementById("scrollLink");
