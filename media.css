@@ -1,9 +1,280 @@
+/* ХЕДЕР АДАПТИВ */
+@media (max-width: 845px) {
+    .logo {
+        font-size: 30px;
+    }
+
+    .main__page {
+       background-position: -500px;
+       height: 100vh;
+      }
+}
 
 
+@media (max-width: 610px) {
+    .scroll__main-page img {
+        width: 2.2%;
+        margin-left: 10px;
+        transform: rotate(360deg);
+      }
+    .logo {
+        font-size: 24px;
+        margin-right: auto;
+    }
+
+    .phone__btn {
+        display: none;
+    }
+
+    .social__line {
+        display: none;
+    }
+    .main__page h1 {
+        font-size: 140px;
+    }
+
+    .scroll__main-page {
+        margin-top: 20px;
+        margin-right: 20%;
+        
+      }
+      
+      @keyframes moveUpDown {
+        0%, 100% {
+          transform: translateY(0) rotate(0deg);
+        }
+        50% {
+          transform: translateY(30px) rotate(0deg);
+        }
+      }
+
+      .main__page__img {
+        margin-top: 30px;
+      }
+}
+
+@media (max-width: 575px) {
+    .main__page h1 {
+        font-size: 125px;
+    }
+}
+
+@media (max-width: 505px) {
+    .main__page h1 {
+        font-size: 108px;
+    }
+
+    .main__page__img  {
+        width: 90%;
+    }
+
+    .scroll__main-page  {
+        margin: 0 auto;
+        margin-top: 15vh;
+        margin-right: 13%;
+    }
+}
 
 
+@media (max-width: 436px) {
+    .main__page h1 {
+        font-size: 96px;
+    }
+
+    .main__page__img  {
+        width: 90%;
+    }
+
+    .scroll__main-page  {
+        margin: 0 auto;
+        margin-top: 15vh;
+        margin-right: 9%;
+    }
+}
 
 
-@media (max-width: 1180px) {
- 
+@media (max-width: 385px) {
+    .main__page h1 {
+        font-size: 85px;
+    }
+
+    .main__page__img  {
+        width: 90%;
+    }
+
+    .scroll__main-page  {
+        margin: 0 auto;
+        margin-top: 15vh;
+        margin-right: 5%;
+    }
+}
+
+@media (max-width: 1250px) {
+    .number-text {
+        font-size: 90px;
+    }
+
+    .desc-text {
+        font-size: 16px;
+    }
+
+    .our__title {
+        font-size: 28px;
+    }
+}
+
+
+@media (max-width: 880px) {
+    .number-text {
+        font-size: 80px;
+    }
+
+    .desc-text {
+        font-size: 14px;
+    }
+
+    .our__title {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 675px) {
+    .number-text {
+        font-size: 75px;
+    }
+
+    .desc-text {
+        font-size: 12px;
+    }
+
+    .our__title {
+        margin-top: 10px;
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 615px) {
+    .number-text {
+        font-size: 70px;
+    }
+
+    .desc-text {
+        font-size: 12px;
+    }
+
+    .our__title {
+        margin-top: 10px;
+        font-size: 19px;
+    }
+}
+
+@media (max-width: 537px) {
+
+    .our__main-block {
+        margin: 0 auto;
+        max-width: 1400px;
+        display: block;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+
+      .ou__us-block {
+        margin-bottom: 70px;
+      }
+    
+    .number-text {
+        font-size: 100px;
+    }
+
+    .desc-text {
+        font-size: 22px;
+    }
+
+    .our__main-block {
+        padding-left: 30px;
+    }
+
+    .our__title {
+        margin-top: 30px;
+        font-size: 30px;
+    }
+}
+
+
+@media (max-width: 1200px) {
+    .clients h1 {
+        font-size: 80px;
+    }
+
+    .spouk__line p {
+        line-height: 47px; 
+        font-size: 26px;
+    }
+    .clients__line-text {
+        font-size: 32px;
+        margin: 0px 65px;
+    }
+
+    .cleints__line {
+        margin: 115px 0px;
+      }
+}
+
+
+@media (max-width: 970px) {
+    .clients h1 {
+        font-size: 60px;
+        margin-bottom: 100px;
+    }
+
+
+    .cleints__line {
+        margin: 95px 0px;
+      }
+}
+
+
+@media (max-width: 750px) {
+    .clients h1 {
+        margin-top: 500px;
+        font-size: 50px;
+        margin-bottom: 90px;
+    }
+
+
+    .cleints__line {
+        margin: 95px 0px;
+      }
+
+      .spouk__line p {
+        line-height: 47px; 
+        font-size: 24px;
+        margin: 0px 40px;
+    }
+}
+
+
+@media (max-width: 620px) {
+    .clients h1 {
+        margin-top: 100px;
+        font-size: 38px;
+        margin-bottom: 90px;
+    }
+
+
+    .cleints__line {
+        margin: 55px 0px;
+      }
+
+      .clients__line-text {
+        font-size: 25px;
+        margin: 0px 50px;
+    }
+
+      .spouk__line p {
+        line-height: 47px; 
+        font-size: 24px;
+        margin: 0px 20px;
+    }
 }
