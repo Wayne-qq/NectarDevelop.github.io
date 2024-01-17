@@ -54,6 +54,10 @@
 }
 
 @media (max-width: 575px) {
+
+    .main__page {
+        height: 140vh;
+    }
     .main__page h1 {
         font-size: 125px;
     }
@@ -62,6 +66,7 @@
 @media (max-width: 505px) {
     .main__page h1 {
         font-size: 108px;
+        margin-top: 160px;
     }
 
     .main__page__img  {
@@ -173,6 +178,7 @@
     .our__us {
         height: 110vh;
         background: none;
+        margin-top: -600px;
     }
 
     .our__main-block {
@@ -431,7 +437,7 @@
      .advantages {
         display: flex;
         flex-direction: column;
-        height: 440vh;
+        height: 450vh;
      }
 
 
